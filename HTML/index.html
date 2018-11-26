@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Sniglet" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Memo-test</title>
+</head>
+    <body>
+        <div class="hello-window">
+            <div class="hi-content">
+                <h1>Memotest</h1>
+                <p>Hola <i class="em em-raised_hand_with_fingers_splayed"></i>
+                ! Vamos a jugar al memo test pero antes de empezar...</p>                       
+                <p>Cuál es tu nombre<i class="em em-interrobang"></i></p>  
+            </div>
+            <div class="input-box">         
+                <input class="input-name" type="text" placeholder="Tu nombre">
+            </div>            
+            <div class="difficulty">
+                <p>¿Con cual dificultad te gustaría jugar?</p>
+                <div class="buttons">
+                    <button class="easy-game">FACIL</button>
+                    <button class="middle-game">INTERMEDIO</button>
+                    <button class="hard-game">DIFICIL</button>
+                </div>
+                <div class="error-name">
+                    <div class="error-text">
+                        <p>UPSS... el nombre es requerido</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game-window">
+                <h1>Memotest</h1>
+                <div class="text-game">
+                    <p class="say-hi">Hola <span class="name">XX</span> </p>
+                    <p>Encontrá todo los pares en menos de <span class="attempts">xx</span> intentos</p>                
+                    <p>NIVEL</p>
+                    <p class="button-choice">xx</p>
+                </div>
+                <div class="game-board">
+
+                </div>               
+                <div class="attemps-view">
+                    <p>Intentos: <span class="counter">XX</span> </p>
+                </div>           
+         </div>
+         <div class="modal">
+            <div class="win-window">
+                <div class="win-text">
+                    <p>Ganaste<i class="em em-tada"></i>! con <span class="attemps">XX</span> intentos</p>
+                    <p>Ya puedes volver a jugar.</p>
+                </div>
+                <div class="buttons">
+                    <button class="buttons1">VOLVER A JUGAR</button>
+                </div>
+                <div class="score-table">
+
+                </div>
+
+            </div> 
+        </div>
+        <div class="lose-window">
+            <div class="lose-text">
+                <p>AGOTASTE TUS INTENTOS</p>
+                <p>Quieres volver a Jugar?</p>
+            </div>
+            <div class="buttons">
+                <button class="buttons1">VOLVER A JUGAR</button>
+            </div>
+
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+         <script src="../JS/index.js"></script>
+    </body>
+</html>

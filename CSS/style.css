@@ -1,0 +1,350 @@
+body {
+  background-image: url("../IMG/fondo.jpg");
+}
+
+.hello-window {
+  width: 16rem;
+  background-color: #ffccff;
+  margin: 2rem auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 7px;
+  border-radius: 12px;
+  height: auto;
+}
+
+.hi-content {
+  margin: auto;
+  width: 11rem;
+  height: 11rem;
+}
+.hi-content h1 {
+  font-family: "Pacifico", cursive;
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #00ace6;
+  font-size: 35px;
+}
+.hi-content p {
+  text-align: center;
+  font-family: "Sniglet", cursive;
+  padding-bottom: 1rem;
+}
+
+.input-box {
+  width: 11rem;
+  margin: auto;
+}
+.input-box .input-name {
+  display: block;
+  margin: auto;
+  width: 100%;
+  color: black;
+  font-size: 82%;
+  background-repeat: no-repeat;
+}
+
+.difficulty {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 11rem;
+  height: auto;
+  margin-top: 1rem;
+}
+.difficulty p {
+  text-align: center;
+  font-family: "Sniglet", cursive;
+  padding-bottom: 1rem;
+}
+.difficulty .buttons {
+  display: block;
+}
+.difficulty .buttons button {
+  background-color: #f39d2d;
+  border: none;
+  color: white;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-family: "Sniglet", cursive;
+}
+
+.error-name {
+  margin-bottom: 1rem;
+  background-color: #ffb3cc;
+  border-radius: 5px;
+  display: none;
+}
+.error-name p {
+  padding-top: 1rem;
+  color: #e6004c;
+  font-family: "Sniglet", cursive;
+  text-align: center;
+}
+
+.game-window {
+  width: 16rem;
+  background-color: #ffccff;
+  margin: 2rem auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 7px;
+  border-radius: 12px;
+  display: none;
+  height: auto;
+  padding-bottom: 1rem;
+}
+.game-window h1 {
+  font-family: "Pacifico", cursive;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #00ace6;
+  font-size: 30px;
+}
+.game-window .text-game {
+  margin: auto;
+}
+.game-window .text-game .say-hi {
+  font-size: 20px;
+}
+.game-window .text-game p {
+  text-align: center;
+  font-family: "Sniglet", cursive;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.attemps-view {
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: white;
+  border: 4px solid #00ace6;
+  border-radius: 10px;
+}
+.attemps-view p {
+  text-align: center;
+  font-family: "Sniglet", cursive;
+}
+
+.game-board {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 80%;
+}
+.game-board .new-card {
+  width: 68px;
+  height: 68px;
+  margin-right: 9px;
+  margin-top: 9px;
+  border: 2px solid #f39d2d;
+  -webkit-perspective: 1000;
+  cursor: pointer;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+.game-board .new-card .front-card {
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  z-index: 2;
+}
+.game-board .new-card .front-card img {
+  width: 100%;
+}
+.game-board .new-card .back-card {
+  width: 100%;
+  display: none;
+  -webkit-transform: rotatey(-180deg);
+}
+.game-board .new-card .back-card img {
+  width: 100%;
+}
+
+.flipped {
+  -webkit-transform: rotatey(180deg);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.blocker {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
+  background-color: rgba(253, 253, 253, 0.54);
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  box-sizing: border-box;
+  width: 90%;
+  height: auto;
+  background: #ffccff;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 12px;
+  padding: 15px 30px;
+  font-family: "Sniglet", cursive;
+  text-align: center;
+}
+.modal .buttons {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+.modal .buttons .buttons1 {
+  background-color: #f39d2d;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-family: "Sniglet", cursive;
+}
+
+.win-window .score-table {
+  width: 98%;
+  height: auto;
+  text-align: center;
+}
+.win-window .score-table table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+}
+.win-window .score-table table th {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #b10144;
+  color: white;
+}
+.win-window .score-table table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.win-window .score-table table td {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.lose-window {
+  display: none;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  box-sizing: border-box;
+  width: 90%;
+  background: #ffccff;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 12px;
+  padding: 15px 30px;
+  font-family: "Sniglet", cursive;
+  text-align: center;
+}
+.lose-window .buttons {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+.lose-window .buttons .buttons1 {
+  background-color: #f39d2d;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-family: "Sniglet", cursive;
+}
+
+@media (min-width: 600px) {
+  .hello-window {
+    width: 30rem;
+  }
+  .hello-window .hi-content {
+    width: 15rem;
+    height: 9rem;
+  }
+  .hello-window .input-box {
+    width: 20rem;
+  }
+
+  .difficulty {
+    width: 20rem;
+    height: auto;
+  }
+
+  .game-window {
+    width: 80%;
+    height: auto;
+  }
+  .game-window .game-board {
+    width: 50%;
+    height: 67%;
+    justify-content: center;
+  }
+  .game-window .game-board .new-card {
+    width: 100px;
+    height: 100px;
+  }
+  .game-window .attemps-view {
+    margin-bottom: 1rem;
+    width: 38%;
+  }
+
+  .win-window {
+    width: 40%;
+  }
+  .win-window .buttons {
+    width: 50%;
+  }
+  .win-window .buttons button {
+    width: 100%;
+  }
+  .win-window .score-table {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .lose-window {
+    width: 40%;
+  }
+  .lose-window .buttons {
+    width: 50%;
+  }
+  .lose-window .buttons button {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
