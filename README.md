@@ -1,3 +1,5 @@
+See the project => http://wise-seat.surge.sh/
+
 # TP-2---MEMOTEST
 Development of memory game with HTML5, CSS, SASS, JS, JQUERY AND JSON.
 
